@@ -391,7 +391,7 @@ export default class Plot extends Component<Props, State> {
       <div>
         <div className="plot-container">
           {/*<div className="plot-yaxis">population</div>*/}
-          <div className="plot-xaxis">time ⟶</div>
+          <div className="plot-xaxis">زمان ⟶</div>
           <div className="plot-chart">
             <canvas ref={this.canvasRef} width={widthToUse} height={this.height} />
           </div>

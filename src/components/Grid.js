@@ -975,7 +975,7 @@ export default class Grid extends Component<Props, State> {
     let protip = null;
     if (this.props.showProTip) {
       protip = (
-          <div style={{color: '#666', fontSize: '12pt', marginTop: '1em'}}>👆 Pro-tip: You can adjust sliders while the simulation is running.</div>
+          <div style={{color: '#666', fontSize: '12pt', marginTop: '1em'}}> پیشنهاد: شما می‌توانید لغزنده‌ها رو هنگام انجام کار شبیه‌ساز تکان دهید</div>
       );
     }
 
