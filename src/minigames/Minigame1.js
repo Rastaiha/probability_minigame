@@ -54,7 +54,7 @@ class App extends Component<Props, State> {
         {/*  Today, in light of our current crisis, I wanted a chance to revisit these simulations. And you can play with them in just a moment. But first...*/}
         {/*</div>*/}
         <div>
-          <h3>مدت زمان انتقال</h3>
+          <h3>مدت زمان انتقال و زمان دارا بودن علائم</h3>
         </div>
         <Figure>
           <Grid gridRows={25}
@@ -82,7 +82,7 @@ class App extends Component<Props, State> {
           </ul>
         </div>
         <div>
-          <h3>Probabilistic infection</h3>
+          <h3>نرخ (احتمال) انتقال بیماری</h3>
         </div>
         
         <Figure>
@@ -103,7 +103,7 @@ class App extends Component<Props, State> {
           />
         </Figure>
         <div>
-          <h3>Travel</h3>
+          <h3>شعاع سفر</h3>
         </div>
         <Figure>
           <Grid degree={24}
@@ -122,6 +122,9 @@ class App extends Component<Props, State> {
             travelRadius={15}
           />
         </Figure>
+        <div>
+          <h3>تعداد افراد مرتبط</h3>
+        </div>
         <Figure>
           <Grid degree={24}
             gridRows={51}
