@@ -54,33 +54,26 @@ class App extends Component<Props, State> {
         {/*  Today, in light of our current crisis, I wanted a chance to revisit these simulations. And you can play with them in just a moment. But first...*/}
         {/*</div>*/}
         <div>
-          <h3>مدت زمان انتقال و زمان دارا بودن علائم</h3>
+          <h3>نرخ (احتمال) انتقال بیماری</h3>
         </div>
+        
         <Figure>
-          <Grid gridRows={25}
-            gridCols={25}
-            nodeSize={20}
-            nug={1}
-            randomSeed={100}
+          <Grid gridRows={51}
+            gridCols={51}
+            maxTransmissionRate={1}
+            nodeSize={10}
+            nug={5}
+            randomSeed={99}
             personHours={4}
             showDaysPerStateControls={true}
             showInteractions={false}
-            speed={0.4}
-            transmissionProbability={1}
+            showProTip={true}
+            showTransmissionProbabilitySlider={true}
+            speed={0.9}
+            transmissionProbability={0.5}
             travelRadius={1}
           />
         </Figure>
-        <div>
-        حتی وقتی این را می خوانید، ممکن است چنین فردی باشید
-        </div>
-        <div>
-          <ul>
-            <li><NodeLegend type="susceptible" /> &nbsp;<b>مستعد</b></li>
-            <li><NodeLegend type="exposed" /> &nbsp;<b>بیمار بدون علائم</b></li>
-            <li><NodeLegend type="infected" /> &nbsp;<b>بیمار با علائم</b></li>
-            <li><NodeLegend type="removed" /> &nbsp;<b>بهبود یافته</b></li>
-          </ul>
-        </div>
       </div>
     );
   }

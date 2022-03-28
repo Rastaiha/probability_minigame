@@ -54,33 +54,30 @@ class App extends Component<Props, State> {
         {/*  Today, in light of our current crisis, I wanted a chance to revisit these simulations. And you can play with them in just a moment. But first...*/}
         {/*</div>*/}
         <div>
-          <h3>مدت زمان انتقال و زمان دارا بودن علائم</h3>
+          <h3>تعداد افراد مرتبط</h3>
         </div>
         <Figure>
-          <Grid gridRows={25}
-            gridCols={25}
-            nodeSize={20}
-            nug={1}
+          <Grid degree={24}
+            gridRows={51}
+            gridCols={51}
+            personHours={20}
+            nodeSize={10}
+            nug={5}
             randomSeed={100}
-            personHours={4}
-            showDaysPerStateControls={true}
-            showInteractions={false}
-            speed={0.4}
-            transmissionProbability={1}
-            travelRadius={1}
+            showAliveFraction={true}
+            showInteractions={true}
+            showPersonHoursSlider={true}
+            showTransmissionProbabilitySlider={true}
+            showTravelRadiusSlider={true}
+            speed={0.8}
+            transmissionProbability={0.3}
+            travelRadius={10}
           />
         </Figure>
-        <div>
-        حتی وقتی این را می خوانید، ممکن است چنین فردی باشید
-        </div>
-        <div>
-          <ul>
-            <li><NodeLegend type="susceptible" /> &nbsp;<b>مستعد</b></li>
-            <li><NodeLegend type="exposed" /> &nbsp;<b>بیمار بدون علائم</b></li>
-            <li><NodeLegend type="infected" /> &nbsp;<b>بیمار با علائم</b></li>
-            <li><NodeLegend type="removed" /> &nbsp;<b>بهبود یافته</b></li>
-          </ul>
-        </div>
+        {/*<div>*/}
+        {/*  Here's another question you might try to answer: <em>For a fixed number of encounters (e.g., 5 per day), how much do you need to reduce the travel radius to keep the disease in check?</em>*/}
+        {/*</div>*/}
+
       </div>
     );
   }
