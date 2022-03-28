@@ -853,7 +853,7 @@ export default class Grid extends Component<Props, State> {
     let travelRadiusSlider = null;
     if (showAll || this.props.showTravelRadiusSlider) {
       travelRadiusSlider =
-          this.renderSlider("شعاع سفر", this.state.travelRadius,
+          this.renderSlider("شعاع", this.state.travelRadius,
               (e, value) => { this.setState({travelRadius: value}); },
               0, Math.min(30, Math.floor(this.props.gridRows/2)), 1, false, false);
     }
