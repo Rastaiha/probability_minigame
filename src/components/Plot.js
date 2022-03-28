@@ -371,10 +371,10 @@ export default class Plot extends Component<Props, State> {
     }
 
     // let infectedCB = <label><input type="checkbox" checked={this.state.showInfected} onChange={(e) => this.setState({showInfected: e.target.checked})}/> Infected: {infectedPercent}%</label>
-    let infectedCB = <span><NodeLegend type="infected"/> &nbsp;Infected: {infectedPercent}%</span>
+    let infectedCB = <span><NodeLegend type="infected"/> &nbsp;مبتلا شده: {infectedPercent}%</span>
 
     // let recoveredCB = <label><input type="checkbox" checked={this.state.showRecovered} onChange={(e) => this.setState({showRecovered: e.target.checked})}/> Recovered: {recoveredPercent}%</label>
-    let recoveredCB = <span><NodeLegend type="removed"/> &nbsp;Recovered: {recoveredPercent}%</span>
+    let recoveredCB = <span><NodeLegend type="removed"/> &nbsp;بهبود یافته: {recoveredPercent}%</span>
 
     let deadCB = null;
     if (this.props.showDeaths) {

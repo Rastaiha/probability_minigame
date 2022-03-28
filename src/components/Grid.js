@@ -821,7 +821,7 @@ export default class Grid extends Component<Props, State> {
     let transmissionProbabilitySlider = null;
     if (showAll || this.props.showTransmissionProbabilitySlider) {
       transmissionProbabilitySlider =
-          this.renderSlider("Transmission rate", this.state.transmissionProbability,
+          this.renderSlider("نرخ انتقال", this.state.transmissionProbability,
               (e, value) => { this.setState({transmissionProbability: value}); },
               0, this.props.maxTransmissionRate, 0.01, false, this.props.highlight === "transmissionRate");
     }
@@ -853,7 +853,7 @@ export default class Grid extends Component<Props, State> {
     let travelRadiusSlider = null;
     if (showAll || this.props.showTravelRadiusSlider) {
       travelRadiusSlider =
-          this.renderSlider("Travel radius", this.state.travelRadius,
+          this.renderSlider("شعاع سفر", this.state.travelRadius,
               (e, value) => { this.setState({travelRadius: value}); },
               0, Math.min(30, Math.floor(this.props.gridRows/2)), 1, false, false);
     }
@@ -861,7 +861,7 @@ export default class Grid extends Component<Props, State> {
     let personHoursSlider = null;
     if (showAll || this.props.showPersonHoursSlider) {
       personHoursSlider =
-          this.renderSlider("Encounters per day", this.state.personHours,
+          this.renderSlider("تعداد افراد مرتبط", this.state.personHours,
               (e, value) => { this.setState({personHours: value}); },
               1, 30, 1, false, false);
     }
@@ -869,7 +869,7 @@ export default class Grid extends Component<Props, State> {
     let daysIncubatingSlider = null;
     if (showAll || this.props.showDaysPerStateControls) {
       daysIncubatingSlider =
-          this.renderSlider("Days in incubation", this.state.daysIncubating,
+          this.renderSlider("دوره نهفتگی بیماری", this.state.daysIncubating,
               (e, value) => { this.setState({daysIncubating: value}); },
               0, 20, 1, false, false);
     }
@@ -877,7 +877,7 @@ export default class Grid extends Component<Props, State> {
     let daysSymptomaticSlider = null;
     if (showAll || this.props.showDaysPerStateControls) {
       daysSymptomaticSlider =
-          this.renderSlider("Days with symptoms", this.state.daysSymptomatic,
+          this.renderSlider("روزهای همراه با علائم", this.state.daysSymptomatic,
               (e, value) => { this.setState({daysSymptomatic: value}); },
               1, 20, 1, false, false);
     }
