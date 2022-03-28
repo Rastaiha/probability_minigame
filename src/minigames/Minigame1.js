@@ -54,7 +54,7 @@ class App extends Component<Props, State> {
         {/*  Today, in light of our current crisis, I wanted a chance to revisit these simulations. And you can play with them in just a moment. But first...*/}
         {/*</div>*/}
         <div>
-          <h3>Incubation period</h3>
+          <h3>مدت زمان انتقال</h3>
         </div>
         <Figure>
           <Grid gridRows={25}
@@ -71,14 +71,14 @@ class App extends Component<Props, State> {
           />
         </Figure>
         <div>
-          Even as you read this, {exposed_you} may be such a person.
+        حتی وقتی این را می خوانید، ممکن است چنین فردی باشید
         </div>
         <div>
           <ul>
-            <li><NodeLegend type="susceptible" /> &nbsp;<b>Susceptible</b></li>
-            <li><NodeLegend type="exposed" /> &nbsp;<b>Infected (incubation period, no symptoms)</b></li>
-            <li><NodeLegend type="infected" /> &nbsp;<b>Infected (with symptoms)</b></li>
-            <li><NodeLegend type="removed" /> &nbsp;<b>Recovered</b></li>
+            <li><NodeLegend type="susceptible" /> &nbsp;<b>مستعد</b></li>
+            <li><NodeLegend type="exposed" /> &nbsp;<b>بیمار بدون علائم</b></li>
+            <li><NodeLegend type="infected" /> &nbsp;<b>بیمار با علائم</b></li>
+            <li><NodeLegend type="removed" /> &nbsp;<b>بهبود یافته</b></li>
           </ul>
         </div>
         <div>
